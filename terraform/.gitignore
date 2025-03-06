@@ -41,5 +41,16 @@ terraform.*
 vendor/**
 terraform/**/.terraform/**
 terraform/repository/.terraform/**
-.terraform.*
-.terraform.lock.hcl
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terraform binary files
+*.tfplan
+*.tfplan.*
+
+# Ignore Terraform .terraform directory
+.terraform/
+
+# Ignore vendor directories
+vendor/
